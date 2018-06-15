@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import {Http ,Response } from '@angular/http';
 
 /**
  * Generated class for the AboutPage page.
@@ -16,6 +17,7 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 export class AboutPage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
+    
   }
 
   ionViewDidLoad() {

@@ -10,6 +10,10 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { ContactPage } from '../pages/contact/contact';
 import { AboutPage } from '../pages/about/about';
+import { TabsPage } from '../pages/tabs/tabs';
+import { CameraPage } from '../pages/camera/camera';
+import { Camera } from '@ionic-native/camera';
+import { HttpModule } from '@angular/http';
 
 @NgModule({
   declarations: [
@@ -17,7 +21,10 @@ import { AboutPage } from '../pages/about/about';
     HomePage,
     ListPage,
     ContactPage,
-    AboutPage
+    AboutPage,
+    TabsPage,
+    CameraPage,
+    HttpModule
   ],
   imports: [
     BrowserModule,
@@ -29,11 +36,15 @@ import { AboutPage } from '../pages/about/about';
     HomePage,
     ListPage,
     ContactPage,
-    AboutPage
+    AboutPage,
+    TabsPage,
+    CameraPage,
+    HttpModule
   ],
   providers: [
     StatusBar,
     SplashScreen,
+    Camera,
     {provide: ErrorHandler, useClass: IonicErrorHandler}
   ]
 })
