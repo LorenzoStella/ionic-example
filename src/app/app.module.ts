@@ -13,7 +13,6 @@ import { AboutPage } from '../pages/about/about';
 import { TabsPage } from '../pages/tabs/tabs';
 import { CameraPage } from '../pages/camera/camera';
 import { Camera } from '@ionic-native/camera';
-import { HttpModule } from '@angular/http';
 
 @NgModule({
   declarations: [
@@ -23,8 +22,7 @@ import { HttpModule } from '@angular/http';
     ContactPage,
     AboutPage,
     TabsPage,
-    CameraPage,
-    HttpModule
+    CameraPage
   ],
   imports: [
     BrowserModule,
@@ -38,8 +36,7 @@ import { HttpModule } from '@angular/http';
     ContactPage,
     AboutPage,
     TabsPage,
-    CameraPage,
-    HttpModule
+    CameraPage
   ],
   providers: [
     StatusBar,
